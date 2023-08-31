@@ -1,6 +1,8 @@
 import './HamburgerMenu.css';
 import logo from '../../images/logo.svg'
 
+import '../../vendor/fonts/fonts.css'; 
+
 function HamburgerMenu() {
     return (
         <div className='toggle__hamburger'>

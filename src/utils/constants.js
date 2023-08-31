@@ -1,0 +1,1 @@
+export const NUMBER = '8 (495) 120-77-58';

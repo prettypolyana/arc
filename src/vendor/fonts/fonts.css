@@ -2,6 +2,14 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    src: url(../fonts/Montserrat/Montserrat.woff) format('woff');
-    src: url(../fonts/Montserrat/Montserrat.woff2) format('woff2');
+    src: url(../fonts/Montserrat/normal/Montserrat.woff) format('woff');
+    src: url(../fonts/Montserrat/normal/Montserrat.woff2) format('woff2');
+};
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: bold;
+    font-weight: 800;
+    src: url(../fonts/Montserrat/bold/Monserrat-bold.woff) format('woff');
+    src: url(../fonts/Montserrat/bold/Monserrat-bold.woff2) format('woff2');
 };

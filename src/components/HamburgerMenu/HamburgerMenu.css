@@ -1,5 +1,11 @@
 .toggle__menu {
-    opacity: 0;
+    visibility: hidden;
+}
+
+.toggle__hamburger {
+    position: absolute;
+    left: 40px;
+    top: 52px;
 }
 
 .toggle__button {
@@ -11,7 +17,7 @@
     height: 24px;
     cursor: pointer;
     z-index: 1;
-    margin-left: 40px;
+    margin-left: 8px;
 }
 
 .toggle__button > span,
@@ -32,12 +38,19 @@
   top: 8px;
 }
 
-.toggle__box {
-    display: block;
+.toggle__content {
     position: fixed;
     visibility: hidden;
     top: 0;
     left: -100%;
+}
+
+.toggle__box {
+    display: block;
+    /* position: fixed; */
+    /* visibility: hidden; */
+    /* top: 0; */
+    /* left: -100%; */
     width: 300px;
     height: 100%;
     margin: 0;
@@ -46,7 +59,7 @@
     text-align: center;
 }
 
-.toggle__box::before {
+.toggle__content::before {
     content: '';
     display: block;
     position: fixed;
@@ -104,7 +117,7 @@
     background-color: #fff;
 }
 
-#toggle__menu:checked ~ .toggle__box {
+#toggle__menu:checked ~ .toggle__content {
     visibility: visible;
     left: 0;
 }

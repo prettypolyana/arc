@@ -1,0 +1,10 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    padding-top: 48px;
+}
+
+.header__img {
+    padding: 0;
+    margin-left: 85px;
+}

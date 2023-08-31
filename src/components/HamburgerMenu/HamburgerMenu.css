@@ -1,0 +1,119 @@
+.toggle__menu {
+    opacity: 0;
+}
+
+.toggle__button {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 52px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    z-index: 1;
+    margin-left: 40px;
+}
+
+.toggle__button > span,
+.toggle__button > span::before,
+.toggle__button > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #323232;
+}
+.toggle__button > span::before {
+  content: '';
+  top: -8px;
+}
+.toggle__button > span::after {
+  content: '';
+  top: 8px;
+}
+
+.toggle__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+}
+
+.toggle__box::before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 1000px;
+    width: 400px;
+    background-color: #15c031;
+    z-index: -1;
+    clip-path: polygon(0% 0%, 130px 0%, 100% 50%, 130px 100%, 0% 100%);
+}
+
+.toggle__item {
+    display: block;
+    margin-bottom: 18px;
+    margin-left: 40px;
+    text-align: left;
+}
+/* 
+.toggle__item:first-child {
+    margin-top: 225px;
+} */
+
+.toggle__link {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.toggle__item:last-child {
+    margin-bottom: 0;
+}
+
+.toggle__item:hover {
+    color: #CFD8DC;
+}
+
+#toggle__menu:checked ~ .toggle__button > span {
+    transform: rotate(45deg);
+    background-color: #fff;
+}
+
+#toggle__menu:checked ~ .toggle__button > span::before {
+    top: 0;
+    transform: rotate(0);
+    background-color: #fff;
+}
+
+#toggle__menu:checked ~ .toggle__button > span::after {
+    top: 0;
+    transform: rotate(90deg);
+    background-color: #fff;
+}
+
+#toggle__menu:checked ~ .toggle__box {
+    visibility: visible;
+    left: 0;
+}
+
+.toggle__logo {
+    width: 142px;
+    height: 32px;
+}
+
+.toggle__header {
+    display: flex;
+    flex-direction: row;
+}

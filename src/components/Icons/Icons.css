@@ -1,0 +1,20 @@
+.icons__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+    align-items: center;
+    height: 22px;
+    padding-top: 55px;
+}
+
+.icons__img {
+    width: 22px;
+    height: 22px;
+    border: 0.2px solid transparent;
+}
+
+.icons__img:hover {
+    border-color: grey;
+    border-radius: 50%;
+}
+

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;800&display=swap');
+
+.info__img-green-bottom {
+    position: fixed;
+    left: 647px;
+    top: 759px;
+    z-index: -2;
+}
+
+.info__img-grey {
+    position: fixed;
+    left: 647px;
+    top: 0;
+    z-index: -1;
+}
+
+.info__big {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    clip-path: polygon(0% 0%, 670px 0%, 100% 50%, 670px 100%, 0% 100%);
+}
+
+.info__right {
+    position: fixed;
+    right: 0;
+}
+
+.info__group {
+    display: flex;
+}
+
+.info__texts {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1093px;
+    margin-top: 70px;
+    margin-right: 0;
+}
+
+.info__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 77px;
+    width: 500px;
+    margin-top: 42px;
+    margin-bottom: 0;
+}
+
+.info__subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    line-height: 38.4px;
+    font-weight: 300;
+    width: 326px;
+    margin-top: 74px;
+    margin-bottom: 0;
+}
+
+.info__text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 54px;
+    margin-top: 74px;
+}
+
+.info__text-bold {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 96px;
+}

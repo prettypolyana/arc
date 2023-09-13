@@ -14,32 +14,6 @@
     margin-right: 37px;
 }
 
-.header__img-green-bottom {
-    position: fixed;
-    left: 647px;
-    top: 759px;
-    z-index: -2;
-}
-
-.header__img-grey {
-    position: fixed;
-    left: 645px;
-    z-index: -1;
-}
-
-.header__big {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    clip-path: polygon(0% 0%, 670px 0%, 100% 50%, 670px 100%, 0% 100%);
-}
-
-.header__left {
-    position: fixed;
-    right: 0;
-}
-
 .header__number {
     font-family: 'Montserrat-bold', sans-serif;
     font-weight: 800;

@@ -1,22 +1,23 @@
-.toggle__menu {
-    visibility: hidden;
-}
-
 .toggle__hamburger {
     position: absolute;
-    left: 40px;
-    top: 52px;
+    left: 0;
+    top: 0;
+}
+
+.toggle__menu {
+    visibility: hidden;
 }
 
 .toggle__button {
     display: flex;
     align-items: center;
-    position: fixed;
+    position: absolute;
     top: 52px;
+    left: 48px;
     width: 24px;
     height: 24px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 2;
 }
 
 .toggle__button > span,
@@ -38,10 +39,11 @@
 }
 
 .toggle__content {
-    position: fixed;
+    position: absolute;
     visibility: hidden;
     top: 0;
     left: -100%;
+    z-index: 1;
 }
 
 .toggle__box {
@@ -57,7 +59,7 @@
 .toggle__content::before {
     content: '';
     display: block;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     height: 1009px;
@@ -120,7 +122,7 @@
 .toggle__logo {
     width: 124px;
     z-index: 2;
-    position: fixed;
+    position: absolute;
     height: 32px;
     top: 48px;
     left: 88px;

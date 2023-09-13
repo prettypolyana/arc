@@ -15,9 +15,7 @@ function SearchBar() {
             <button className='search__button' onClick={toggleSearchBar}>
                 <img className='search__img' alt='search' src={search}/>
             </button>
-            {isSearchBarVisible && (
-                <input className='search__input' placeholder='подбор земельных участков'/>
-            )}
+            <input className={`search__input ${isSearchBarVisible ? 'search__input-visible' : ''}`} placeholder='подбор земельных участков'/>
         </>
     )
 }

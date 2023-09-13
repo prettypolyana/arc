@@ -29,6 +29,6 @@
 .header__group {
     display: flex;
     flex-direction: row;
-    position: fixed;
+    position: absolute;
     left: 1321px;
 }
